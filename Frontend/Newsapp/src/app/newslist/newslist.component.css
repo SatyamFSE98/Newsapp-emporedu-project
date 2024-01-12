@@ -1,0 +1,131 @@
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+.app-container {
+  padding-left: auto; /* Adjust as needed */
+  padding-right: auto; /* Adjust as needed */
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.news-item {
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  width: 120px;
+  /* Adjust as needed */
+}
+.far, .fa-heart {
+  border-color: snow;
+  border-radius: 0%;
+  background-color: snow;
+  box-shadow: snow;
+}
+
+.favorite-icon {
+  width: 24px;
+  height: 24px;
+  transition: color 0.3s ease;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  background-color: #ffffffcc;
+  /* Light blue color with less opacity */
+  border-radius: 0px;
+  border-color: white;
+  padding: 10px;
+  margin: 10px;
+  /* Add margin for better separation */
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  /* Adjust the value as needed */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img-top {
+  height: 200px;
+}
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.height {
+  height: 10vh;
+}
+
+
+.search {
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.search input {
+  height: 60px;
+  text-indent: 25px;
+  border: 2px solid #d6d4d4;
+}
+.search input:focus {
+
+  box-shadow: none;
+  border: 2px solid blue;
+
+
+}
+
+.search .fa-search {
+
+  position: absolute;
+  top: 20px;
+  left: 16px;
+
+}
+
+.search button {
+
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 50px;
+  width: 110px;
+  background: #006b8b;
+  margin-top: 1%;
+
+}
+.square-card {
+  border-radius: 0; /* To make it square */
+}
+
+.container-fluid {
+  margin-left: 0; /* Remove left margin */
+  margin-right: -0.5%; /* Remove right margin */
+}

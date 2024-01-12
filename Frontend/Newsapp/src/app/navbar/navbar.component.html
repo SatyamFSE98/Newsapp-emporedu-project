@@ -1,0 +1,27 @@
+<div class="navbar" [ngClass]="{'fixed-navbar': isNavbarFixed}">
+  <div>
+    <img src="../assets/newslogo.png" alt="Newsapp logo">
+    <a class="home-link" routerLink="/home"
+      style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold; font-size: 1.2em; color: rgb(255, 255, 255);">
+      <i class="fa fa-home"></i> Home
+    </a>
+  </div>
+  <div>
+    <a *ngIf="isloginUser()" routerLink="/newslist"><i class="fas fa-list"></i> Newslist</a>
+    <a *ngIf="isloginUser()" routerLink="/wishlist"><i class="fas fa-heart"></i> Wishlist</a>
+
+    <ng-container>
+
+      <a *ngIf="!isloginUser()" routerLink="/login" [class.disabled]="isLoggedIn"><i class="fas fa-user"></i> Login</a>
+      <a *ngIf="!isloginUser()" routerLink="/signup" [class.disabled]="isLoggedIn"><i class="fas fa-user-plus"></i> Sign Up</a>
+
+      <!-- Display only when the user is logged in -->
+      <a *ngIf="isloginUser()" tabindex="0" (click)="logoutUser()" (keyup.enter)="logoutUser()" [class.disabled]="!isLoggedIn">
+        <i class="fas fa-user"></i> Logout
+      </a>
+      
+      
+        
+    </ng-container>
+  </div>
+</div>

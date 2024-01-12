@@ -1,0 +1,54 @@
+.container {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-item {
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn-icon {
+  margin-left: auto;
+}
+
+.favorite-icon {
+  width: 24px;
+  height: 24px;
+  transition: color 0.3s ease;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0px;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+  border-color: snow;
+}
+
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img-top {
+  height: 200px;
+}

@@ -1,0 +1,16 @@
+<button class="btn-back" (click)="goBack()"> <i class="fas fa-arrow-left"></i> </button>
+<div class="news-detail-container">
+    <div class="card">
+        <div class="image-div">
+            <img [src]="urlToImage" class="card-img-top" alt="{{ title }}">
+        </div>
+
+        <div class="title-div">
+            <h1 class="card-title">{{ title }}</h1>
+        </div>
+
+        <div class="description-div">
+            <p class="card-text">{{ description }}</p>
+        </div>
+    </div>
+</div>

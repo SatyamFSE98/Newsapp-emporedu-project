@@ -1,0 +1,63 @@
+<!-- Section: Design Block -->
+<section class="background-radial-gradient overflow-hidden">
+
+  <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+    <div class="row gx-lg-5 align-items-center mb-5">
+      <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+        <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+          The Trending News <br />
+          <span style="color: hsl(218, 81%, 75%)">On your finger tip!!</span>
+        </h1>
+        <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+          Log in to the news portal to get the latest news to your account.
+        </p>
+      </div>
+
+      <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+        <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+        <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+        <div class="card bg-glass">
+          <h1 class="card-heading display-8 m-4" style="font-size: 2.5rem; color: #007BFF;">Login</h1>
+          <div class="card-body px-3 py-7 px-md-8">
+            <form #loginForm="ngForm" (ngSubmit)="login()">
+              <!-- Username input -->
+              <div class="row mb-4">
+                <label for="username" class="col-md-3 col-form-label text-md-end">Username:</label>
+                <div class="col-md-7">
+                  <div class="form-outline">
+                    <input [(ngModel)]="loginData.username" name="username" type="text" class="form-control" />
+                    <label class="form-label" for="username"></label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Password input -->
+              <div class="row mb-4">
+                <label class="col-md-3 col-form-label text-md-end" for="password">Password:</label>
+                <div class="col-md-7">
+                  <div class="form-outline">
+                    <input [(ngModel)]="loginData.password" name="password" type="password" class="form-control" />
+                    <label class="form-label" for="password"></label>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Submit button -->
+              <div class="form-group">
+                <button class="btn btn-primary" style="width:30%;" id="submit" type="button" name="registerSubmit"
+                  [disabled]="!loginForm.valid" (click)="login()">Login</button>
+              </div>
+
+              <div class="text-center">
+                <p>or signup here:</p>
+                <a routerLink="/signup"><i class="fas fa-user-plus"></i> Sign Up</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,62 @@
+.news-detail-container {
+    display: flex;
+    flex-direction: column;
+    /* Set the flex direction to column */
+    padding: 20px;
+}
+
+.image-div,
+.title-div,
+.description-div {
+    margin-bottom: 20px;
+    /* Add margin to create space between divs */
+}
+
+.image-div img {
+    max-width: 100%;
+    height: auto;
+}
+
+.title-div h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.description-div p {
+    font-size: 16px;
+    color: #555;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #006b8b;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 2%;
+}
+
+.btn-back:hover {
+    background-color: #2980b9;
+}
+
+.card {
+    padding: 2% 2% 2% 2%;
+    height: 50%;
+    width: 50%;
+    border-color: white;
+    align-items: center;
+    margin-left: 25%;
+    padding-bottom: 30%;
+
+}
+
+.news-detail-container {
+    background-image: url("https://img.freepik.com/free-photo/blue-abstract-gradient-wave-wallpaper_53876-108364.jpg?w=1380&t=st=1703155225~exp=1703155825~hmac=249e85dc76dd96ce7c50ba65de6ceaafb394b5f411678a2c9be93a8d5a64314a");
+}

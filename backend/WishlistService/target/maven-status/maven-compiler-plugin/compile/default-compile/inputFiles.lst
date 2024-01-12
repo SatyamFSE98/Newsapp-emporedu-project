@@ -1,0 +1,12 @@
+D:\empoweredu\News-App\WishlistService\src\main\java\com\news\wishlist\model\Wishlist.java
+D:\empoweredu\News-App\WishlistService\src\main\java\com\news\wishlist\service\WishlistService.java
+D:\empoweredu\News-App\WishlistService\src\main\java\com\news\wishlist\repository\WishlistRepository.java
+D:\empoweredu\News-App\WishlistService\src\main\java\com\news\wishlist\exception\InvalidCredentialException.java
+D:\empoweredu\News-App\WishlistService\src\main\java\com\news\wishlist\WishlistServiceApplication.java
+D:\empoweredu\News-App\WishlistService\src\main\java\com\news\wishlist\controller\WishlistController.java
+D:\empoweredu\News-App\WishlistService\src\main\java\com\news\wishlist\model\ApiResponse.java
+D:\empoweredu\News-App\WishlistService\src\main\java\com\news\wishlist\service\WishlistServiceImpl.java
+D:\empoweredu\News-App\WishlistService\src\main\java\com\news\wishlist\feign\AuthClient.java
+D:\empoweredu\News-App\WishlistService\src\main\java\com\news\wishlist\exception\NewsAlreadyExistsException.java
+D:\empoweredu\News-App\WishlistService\src\main\java\com\news\wishlist\config\OpenApiConfig.java
+D:\empoweredu\News-App\WishlistService\src\main\java\com\news\wishlist\exception\NewsNotFoundException.java

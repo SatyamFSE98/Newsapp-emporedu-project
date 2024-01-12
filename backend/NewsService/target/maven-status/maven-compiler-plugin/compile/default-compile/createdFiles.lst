@@ -1,0 +1,12 @@
+com\news\newsapi\feign\AuthClient.class
+com\news\newsapi\config\WebConfig.class
+com\news\newsapi\config\OpenApiConfig.class
+com\news\newsapi\NewsApplication.class
+com\news\newsapi\controller\ApiController.class
+com\news\newsapi\exception\InvalidCredentialException.class
+com\news\newsapi\service\ApiService.class
+com\news\newsapi\service\ApiServiceImpl.class
+com\news\newsapi\exception\NoNewsFoundException.class
+com\news\newsapi\domain\Article.class
+com\news\newsapi\domain\Source.class
+com\news\newsapi\domain\News.class

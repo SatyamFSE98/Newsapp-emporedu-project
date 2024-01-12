@@ -1,0 +1,53 @@
+<div class="app-container">
+
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-8">
+            <div class="search">
+                <i class="fa fa-search" style="padding-top: 1%;"></i>
+                <input type="text" [(ngModel)]="searchKeyword" class="form-control"
+                    placeholder="Search here for news..">
+                <button class="btn btn-primary" (click)="searchNews()">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <div class="col-md-3" *ngFor="let news of newsData?.articles">
+
+
+
+                <img [src]="news.urlToImage" class="card-img-top" alt="{{ news.title }}">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="card-title">{{ news.title }}</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <button (click)="navigateToNewsDetail(news)" class="btn btn-primary"
+                                routerLink="/newsdetail">Read More</button>
+                        </div>
+                        <div class="col-md-4 text-right">
+                            <!-- Empty heart icon -->
+                            <button *ngIf="!isFavorite(news)" (click)="addToWishlist(news)" class="btn btn-icon"
+                                style="font-size:20px; color: black;">
+                                <i class="far fa-heart"></i>
+                            </button>
+
+                            <!-- Filled heart icon -->
+                            <button *ngIf="isFavorite(news)" (click)="addToWishlist(news)" class="btn btn-icon"
+                                style="font-size:20px; color: red;">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

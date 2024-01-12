@@ -1,0 +1,12 @@
+com\news\wishlist\exception\InvalidCredentialException.class
+com\news\wishlist\repository\WishlistRepository.class
+com\news\wishlist\exception\NewsAlreadyExistsException.class
+com\news\wishlist\config\OpenApiConfig.class
+com\news\wishlist\WishlistServiceApplication.class
+com\news\wishlist\feign\AuthClient.class
+com\news\wishlist\service\WishlistServiceImpl.class
+com\news\wishlist\exception\NewsNotFoundException.class
+com\news\wishlist\model\ApiResponse.class
+com\news\wishlist\controller\WishlistController.class
+com\news\wishlist\service\WishlistService.class
+com\news\wishlist\model\Wishlist.class

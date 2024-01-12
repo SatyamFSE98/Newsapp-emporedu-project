@@ -1,0 +1,33 @@
+<div class="container">
+    
+    <div class="col-md-4" *ngFor="let news of wishlist">
+            <img [src]="news.urlToImage" class="card-img-top" alt="{{ news.title }}">
+            <div class="card-body">
+                <h3 class="card-title" style="font-family: Georgia, 'Times New Roman', Times, serif;">{{ news.title }}</h3>
+                <!-- <p class="card-text">{{news.description }}</p> -->
+                <!-- <p *ngIf="news.showFullContent" class="card-text">{{ }}</p>  -->
+
+
+
+                <div class="row">
+                    <div class="col-md-10">
+                        <button (click)="navigateToNewsDetail(news)" class="btn btn-primary" routerLink="/newsdetail">Read More</button>
+                      </div>
+                      <div class="col-md-2 text-right">
+                        <i
+                          (click)="removeFromWishlist(news.id)"
+                          (keydown.enter)="removeFromWishlist(news.id)"
+                          tabindex="0" 
+                          role="button" 
+                          class="fas fa-trash"
+                          style="font-size: 38px; color: red"
+                        ></i>
+                      </div>
+                      
+                  </div>
+                  
+               
+            </div>
+        </div>
+    </div>
+
